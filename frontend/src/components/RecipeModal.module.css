@@ -1,0 +1,92 @@
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+    gap: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.modalTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modalImage {
+    max-width: 200px; /* 画像のサイズを小さく */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* テキストエリアとの余白 */
+}
+
+.modalTextarea {
+    width: 100%;
+    height: 300px; /* テキストエリアを大きく */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.modalInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.modalButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.modalButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+}
+
+.modalButton:hover {
+    background-color: #0056b3;
+}
+
+.modalCloseButton {
+    background-color: #6c757d;
+}
+
+.modalCloseButton:hover {
+    background-color: #5a6268;
+}
+
+.deleteButton {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deleteButton:hover {
+    background-color: #d9363e;
+  }
+  

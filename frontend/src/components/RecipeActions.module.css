@@ -1,0 +1,57 @@
+/* RecipeActions.module.css */
+
+/* ボタン全体のスタイル */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* ボタン */
+.actionButton {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ボタンホバー時のスタイル */
+.actionButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ボタン無効時のスタイル */
+.actionButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ローディング状態のコンテナ */
+.loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ローディングGIFのスタイル */
+.loadingGif {
+    width: 30px;
+    height: 30px;
+}
+
+/* ローディングテキスト */
+.loadingText {
+    font-size: 1rem;
+    color: #555;
+}

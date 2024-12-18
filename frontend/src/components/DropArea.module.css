@@ -1,0 +1,17 @@
+/* DropArea.module.css */
+.dropArea {
+    min-height: 100px; /* ドロップ領域の高さ */
+    border: 2px dashed #ccc;
+    padding: 10px;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+  
+  .isOver {
+    background-color: #e0f7fa;
+  }
+  
+  .canDrop {
+    border-color: #00796b;
+  }
+  

@@ -1,0 +1,44 @@
+.container {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.inputFile {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.uploadButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+    background-color: #0056b3;
+}
+
+.uploadButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

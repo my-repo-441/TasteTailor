@@ -1,0 +1,80 @@
+.chatBox {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.userMessage {
+    text-align: right;
+    color: blue;
+    margin: 5px 0;
+    background-color: #e6f7ff;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.assistantMessage {
+    text-align: left;
+    color: green;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.inputArea {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}

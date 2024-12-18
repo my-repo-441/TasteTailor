@@ -1,0 +1,47 @@
+{
+  "hash": "9c8bd3c4",
+  "browserHash": "7e643575",
+  "optimized": {
+    "react": {
+      "src": "../../frontend/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "b7577a1f",
+      "needsInterop": true
+    },
+    "react-dnd": {
+      "src": "../../frontend/node_modules/react-dnd/dist/index.js",
+      "file": "react-dnd.js",
+      "fileHash": "e8879f03",
+      "needsInterop": false
+    },
+    "react-dnd-html5-backend": {
+      "src": "../../frontend/node_modules/react-dnd-html5-backend/dist/index.js",
+      "file": "react-dnd-html5-backend.js",
+      "fileHash": "26dd409e",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../frontend/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "a7e26ff6",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../frontend/node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "0804a061",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-AM3X3D7H": {
+      "file": "chunk-AM3X3D7H.js"
+    },
+    "chunk-R3ISL647": {
+      "file": "chunk-R3ISL647.js"
+    },
+    "chunk-5WWUZCGV": {
+      "file": "chunk-5WWUZCGV.js"
+    }
+  }
+}
