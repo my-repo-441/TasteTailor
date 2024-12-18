@@ -4,7 +4,7 @@ import AvailableIngredients from '../components/AvailableIngredients';
 import SelectedIngredients from '../components/SelectedIngredients';
 import RecipeManager from '../components/RecipeManager';
 import RecipeActions from '../components/RecipeActions';
-import { fetchRecipe } from '../utils/api';
+import { fetchRecipe, processImage } from '../utils/api';
 import { loadRecipesFromBackend, saveRecipesToBackend } from '../utils/storage2';
 import styles from './Home.module.css';
 import logo from '../../assets/images/taste-tailor-logo.png';
@@ -16,6 +16,7 @@ const Home = () => {
     const [loading, setLoading] = useState(false);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [imageFile, setImageFile] = useState(null);
 
     const [availableIngredients, setAvailableIngredients] = useState([
         { id: 1, name: 'トマト', icon: '🍅' },
@@ -30,8 +31,37 @@ const Home = () => {
         { id: 10, name: 'ニンニク', icon: '🧄' },
         { id: 11, name: 'ブロッコリー', icon: '🥦' },
     ]);
-    console.log(availableIngredients);
-    console.log(selectedIngredients);
+
+    const handleImageUpload = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            setImageFile(file);
+        }
+    };
+
+    const analyzeImage = async () => {
+        if (!imageFile) {
+            alert('画像をアップロードしてください');
+            return;
+        }
+
+        try {
+            setLoading(true);
+            const ingredients = await processImage(imageFile);
+            const newIngredients = ingredients.map((name, index) => ({
+                id: Date.now() + index,
+                name,
+                icon: '🍴',
+            }));
+
+            setAvailableIngredients((prev) => [...prev, ...newIngredients]);
+        } catch (error) {
+            console.error('Error processing image:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     useEffect(() => {
         const fetchSavedRecipes = async () => {
             try {
@@ -112,10 +142,14 @@ const Home = () => {
 
     return (
         <div className={styles.container}>
-            <header className={styles.header}>
-                <img src={logo} alt="TasteTailor ロゴ" className={styles.logo} />
-                <h1>TasteTailor</h1>
-            </header>
+
+            <img src={logo} alt="TasteTailor ロゴ" className={styles.logo} />
+            <h1>TasteTailor</h1>
+
+            <div className={styles.imageUploadContainer}>
+                <input type='file' accept="image/*" onChange={handleImageUpload} />
+                <button onClick={analyzeImage} disabled={loading}>{loading ? "解析中です": "画像を解析します"}</button>
+            </div>
             <div className={styles.ingredientsContainer}>
                 <AvailableIngredients
                     ingredients={availableIngredients}
@@ -140,7 +174,7 @@ const Home = () => {
                 handleDeleteRecipe={handleDeleteRecipe}
                 setIsModalOpen={setIsModalOpen}
             />
-        </div>
+        </div >
     );
 };
 

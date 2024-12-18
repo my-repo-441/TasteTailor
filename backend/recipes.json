@@ -1,12 +1,7 @@
 [
     {
         "title": "レシピ 1",
-        "recipe": "料理名：「ふわふわ卵のパンオーブン焼き」\n\n材料：「\n- 卵 4個\n- 食パン 2枚\n- 牛乳 100ml\n- バター 20g\n- 塩 少々\n- 胡椒 少々\n- お好みでパセリやチーズ 適量\n」\n\n作り方：「\n1. オーブンを180℃に予熱します。\n2. ボウルに卵を割り入れ、牛乳、塩、胡椒を加えてよく混ぜ合わせます。\n3. 食パンの真ん中をくり抜き、外側を軽くバターで塗ります。\n4. 食パンのくり抜いた部分に卵液を流し入れます。お好みでチーズや刻んだパセリを加えます。\n5. バターを塗ったパンを耐熱皿に並べ、180℃のオーブンで約10〜15分焼きます。卵がふわふわになり、パンがこんがりと色づくまで焼いてください。\n6. 焼き上がったら、お皿に盛り付け、好みでさらにパセリを散らして完成です。 \n\n軽やかでボリューム満点の朝食やブランチにぴったりです！」",
-        "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-6ctCbGpXizEe2iVIO0X6AiO3/user-34JYIi4w60JwZ0pf4FRH5vZJ/img-9nz80lcf8yiaM5bSkgdn9iyK.png?st=2024-12-18T10%3A31%3A31Z&se=2024-12-18T12%3A31%3A31Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-18T00%3A31%3A53Z&ske=2024-12-19T00%3A31%3A53Z&sks=b&skv=2024-08-04&sig=5iamtkdos2r0ScKCDXlr7ery1KlYszdEmb3lM2F3Sy4%3D"
-    },
-    {
-        "title": "レシピ 2",
-        "recipe": "料理名：「ブロッコリーと卵のオムレツ」  \n材料：「卵 4個、ブロッコリー 1/2株（約100g）、牛乳 大さじ2、塩 適量、こしょう 適量、オリーブオイル 大さじ1、チーズ（お好みで） 計50g」  \n作り方：「1. ブロッコリーは小房に分けて、茹でるか蒸して柔らかくします。  \n2. ボウルに卵を割り入れ、牛乳を加え、塩とこしょうで味付けをしてよく混ぜます。  \n3. フライパンにオリーブオイルを熱し、ブロッコリーを軽く炒めます。  \n4. 混ぜた卵液を加え、全体に広げて中火で焼きます。  \n5. 卵が半熟になったら、お好みでチーズをのせて、蓋をして火を通します。  \n6. 卵が完全に固まる前に、フライパンを傾けながらオムレツを折りたたみ、皿に盛り付けて完成です。」",
-        "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-6ctCbGpXizEe2iVIO0X6AiO3/user-34JYIi4w60JwZ0pf4FRH5vZJ/img-xb2oLqiXSwp4L17XZVwHf2Yw.png?st=2024-12-18T10%3A32%3A47Z&se=2024-12-18T12%3A32%3A47Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-18T10%3A28%3A37Z&ske=2024-12-19T10%3A28%3A37Z&sks=b&skv=2024-08-04&sig=RgQC%2B0/zzOReIVcG5Xk5RnM5DPe6Z1ljG4uKbU58A9A%3D"
+        "recipe": "料理名：「チーズときのこのリゾット」  \n材料：「 Arborio米 200g、きのこ（お好みの種類、しいたけやえのきなど）200g、玉ねぎ 1個、チーズ（パルメザンやモッツァレラ）100g、チキンブロス 500ml、白ワイン 100ml、オリーブオイル 大さじ2、塩 適量、胡椒 適量、パセリ（飾り用） 適量」  \n作り方：「 1. きのこは食べやすい大きさに切り、玉ねぎはみじん切りにします。 2. 鍋にオリーブオイルを熱し、玉ねぎを入れて透明になるまで炒めます。 3. きのこを加え、しんなりするまで炒めます。 4. Arborio米を加え、全体が油に絡むまで炒めます。 5. 白ワインを加え、アルコールを飛ばします。 6. 温めたチキンブロスをお玉1杯ずつ加え、米が吸収したら次のお玉を加えるのを繰り返します。約18-20分煮続けます。 7. 米がアルデンテになったら、火を止めてチーズを加え、全体を混ぜ合わせて塩と胡椒で味を調えます。 8. 皿に盛り付け、パセリを散らして完成です。」",
+        "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-6ctCbGpXizEe2iVIO0X6AiO3/user-34JYIi4w60JwZ0pf4FRH5vZJ/img-8UW3cTQKmYFwkE7nRkhL4LNt.png?st=2024-12-18T11%3A13%3A27Z&se=2024-12-18T13%3A13%3A27Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-18T00%3A45%3A56Z&ske=2024-12-19T00%3A45%3A56Z&sks=b&skv=2024-08-04&sig=3PqEGMIwq7vnOe/tst5qMPDEaLsS37SElCuoe1MwulI%3D"
     }
 ]

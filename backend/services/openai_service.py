@@ -27,10 +27,10 @@ def generate_recipe(ingredients):
     
     return recipe
 
-def generate_recipe_img(recipe_name, recipe_ingredient_name):
+def generate_recipe_img(recipe_name):
     response_img = client.images.generate(
       model="dall-e-3",
-      prompt = recipe_name + "。材料は以下です。" + recipe_ingredient_name + "食欲をそそるような食に特化したイラストでお願いします。",
+      prompt = recipe_name + "食欲をそそるような食に特化したイラストでお願いします。",
       size="1024x1024",
       quality="standard",
       n=1,
@@ -48,15 +48,15 @@ def extract_recipe_name(recipe):
         return match.group(1)  # マッチした部分を返す
     return None  # 料理名が見つからない場合
 
-def extract_recipe_ingredients(recipe):
-    """
-    レシピ文字列から材料を抽出する関数
-    """
-    match = re.search(r'材料：「([\s\S]*?)」', recipe)  # 改行を含めて全体をマッチ
+# def extract_recipe_ingredients(recipe):
+#     """
+#     レシピ文字列から材料を抽出する関数
+#     """
+#     match = re.search(r'材料：「([\s\S]*?)」', recipe)  # 改行を含めて全体をマッチ
 
-    if match:
-        return match.group(1)  # マッチした部分を返す
-    return None  # 材料名が見つからない場合
+#     if match:
+#         return match.group(1)  # マッチした部分を返す
+#     return None  # 材料名が見つからない場合
 
 def generate_recipe_and_image(ingredients):
     recipe = generate_recipe(ingredients)
@@ -64,13 +64,13 @@ def generate_recipe_and_image(ingredients):
     # 料理名を抽出
     recipe_name = extract_recipe_name(recipe)
 
-    # 材料名を抽出
-    recipe_ingredient_name = extract_recipe_ingredients(recipe)
+    # # 材料名を抽出
+    # recipe_ingredient_name = extract_recipe_ingredients(recipe)
 
 
     if recipe_name:
         print(f"抽出した料理名: {recipe_name}")
-        image_url = generate_recipe_img(recipe_name, recipe_ingredient_name)
+        image_url = generate_recipe_img(recipe_name)
         print(f"生成された画像URL: {image_url}")
         return {"recipe": recipe, "image_url": image_url}
     else:
